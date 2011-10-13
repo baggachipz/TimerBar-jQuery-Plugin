@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.timerbar.js"></script>
+<script>
+$(function() {
+	$('#timer').timerbar({'backgroundColor':'red'}, function() {
+		alert('done');
+	});
+});
+</script>
+<style type="text/css">
+	#timer {
+		width: 400px;
+		height: 20px;
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+
+	<div id="timer"></div>
+
+</body>
+</html>

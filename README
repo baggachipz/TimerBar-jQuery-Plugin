@@ -1,0 +1,26 @@
+TIMERBAR JQUERY PLUGIN
+
+This plugin is a simple countdown timer bar that decrements a bar, right to left. The timerbar 
+inherits the width and height of the element you use to encapsulate it, and allows you to set the
+background (either image or color) and duration. An optional callback will execute when the 
+timerbar finishes. 
+
+An example of usage can be viewed using example.html in the project.
+
+A full-featured example would be:
+
+
+$('#mydiv').timerbar({
+	'backgroundColor': '#ff0000',   //when image is present, color is used as a fallback for image
+	'backgroundImage': './image.png',   //absolute or relative url to image to use, which is tiled
+	'duration': 10000   //in milliseconds, 10000 (10 seconds) is default
+}, 
+function() {
+	alert('this is the callback');
+});
+
+
+A few notes:
+ - You can style the container div however you like. Use border, shadow, etc as you see fit.
+ - Feel free to style the moving bar as you see fit, it is simply div.timerbar-innner
+ - You can use an animated .gif as the background image
